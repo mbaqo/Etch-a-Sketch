@@ -13,7 +13,10 @@ function toggleModal() {
             alert("Squares must be between 10 and 100 (inclusive)");
         } else {
             createGrid(input);
-            modal.classList.add("hidden")
+            document.querySelector(".container").addEventListener("mouseleave", (e) => {
+                setTimeout(changeBackgroundOnHover(), 1000);
+            });
+            modal.classList.add("hidden");
         }
     });
 }
@@ -22,7 +25,6 @@ function toggleModal() {
 
 // Make Grid
 function createGrid(squares) {
-    console.log(squares);
     const gridContainer = document.querySelector(".container");
     gridContainer.replaceChildren();
     for (let i = 0; i < squares; i++) {
@@ -45,6 +47,4 @@ function changeBackgroundOnHover() {
     }));
 }
 
-// createGrid();
-changeBackgroundOnHover();
 toggleModal();
