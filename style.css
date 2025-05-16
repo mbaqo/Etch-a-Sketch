@@ -92,7 +92,8 @@ h1#sketch-title {
 }
 
 .modal-box {
-    background-color: var(--color-red);
+    /* background-color: var(--color-red); */
+    background-color: #777171a6;
     border-radius: 20px;
     height: 500px;
     width: 350px;
