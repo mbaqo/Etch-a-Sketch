@@ -21,8 +21,6 @@ function toggleModal() {
     });
 }
 
-
-
 // Make Grid
 function createGrid(squares) {
     const gridContainer = document.querySelector(".container");
@@ -43,9 +41,13 @@ function createGrid(squares) {
 function changeBackgroundOnHover() {
     const boxes = document.querySelectorAll(".box");
     boxes.forEach((box) => box.addEventListener("mouseover", (e) => {
-        box.style.backgroundColor = "blue";
+        box.style.backgroundColor = randomColor();
     }));
 }
+
+const randomColor = () => { 
+    return `rgb(${Math.floor(Math.random() * 266)}, ${Math.floor(Math.random() * 266)}, ${Math.floor(Math.random() * 266)})`;
+};
 
 createGrid(16);
 toggleModal();
