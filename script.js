@@ -41,7 +41,7 @@ function createGrid(squares) {
 function changeBackgroundOnHover() {
     const boxes = document.querySelectorAll(".box");
     boxes.forEach((box) => box.addEventListener("mouseover", (e) => {
-        box.style.backgroundColor = randomColor();
+        box.style.backgroundColor = "black";
     }));
 }
 
