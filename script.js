@@ -12,6 +12,7 @@ function toggleModal() {
         if (input < 10 || input > 100) {
             alert("Squares must be between 10 and 100 (inclusive)");
         } else {
+            createGrid(input);
             modal.classList.add("hidden")
         }
     });
@@ -20,12 +21,14 @@ function toggleModal() {
 
 
 // Make Grid
-function createGrid() {
+function createGrid(squares) {
+    console.log(squares);
     const gridContainer = document.querySelector(".container");
-    for (let i = 0; i < 16; i++) {
+    gridContainer.replaceChildren();
+    for (let i = 0; i < squares; i++) {
         const gridRow = document.createElement("div");
         gridRow.classList.add("row");
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < squares; j++) {
             const gridBox = document.createElement("div");
             gridBox.classList.add("box");
             gridRow.appendChild(gridBox);
@@ -42,6 +45,6 @@ function changeBackgroundOnHover() {
     }));
 }
 
-createGrid();
+// createGrid();
 changeBackgroundOnHover();
 toggleModal();
