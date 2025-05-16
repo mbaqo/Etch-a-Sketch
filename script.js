@@ -1,3 +1,25 @@
+// Modal Toggle
+function toggleModal() {
+    const modal = document.querySelector(".modal-container");
+    // document.querySelector("#reset-btn").addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     modal.classList.remove("hidden")
+    // });
+    // document.querySelector("#create-btn").addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     modal.classList.add("hidden")
+    // });
+    document.querySelectorAll(".modal-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.toggle("hidden")
+    });
+    })
+}
+
+
+
+// Make Grid
 function createGrid() {
     const gridContainer = document.querySelector(".container");
     for (let i = 0; i < 16; i++) {
@@ -12,6 +34,7 @@ function createGrid() {
     }
 }
 
+// Hover Feature
 function changeBackgroundOnHover() {
     const boxes = document.querySelectorAll(".box");
     boxes.forEach((box) => box.addEventListener("mouseover", (e) => {
@@ -21,3 +44,4 @@ function changeBackgroundOnHover() {
 
 createGrid();
 changeBackgroundOnHover();
+toggleModal();

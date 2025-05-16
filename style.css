@@ -17,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 h1#sketch-title {
@@ -93,8 +94,8 @@ h1#sketch-title {
 .modal-box {
     background-color: var(--color-red);
     border-radius: 20px;
-    height: 50%;
-    width: 20%;
+    height: 500px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
