@@ -85,3 +85,46 @@ h1#sketch-title {
     justify-content: center;
     align-items: center;
 }
+
+.modal-container.hidden {
+    display: none;
+}
+
+.modal-box {
+    background-color: var(--color-red);
+    border-radius: 20px;
+    height: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-box .heading h1 {
+    font-family: "Corinthia", sans-serif;
+    color: gold;
+    font-size: 48px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container label {
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.input-container input {
+    height: 50px;
+    width: 60px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 10px;
+}
