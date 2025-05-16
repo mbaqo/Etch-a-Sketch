@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: beige;
     overflow: hidden;
 }
 
@@ -62,6 +62,7 @@ h1#sketch-title {
 }
 
 .modal-btn {
+    cursor: pointer;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -92,8 +93,7 @@ h1#sketch-title {
 }
 
 .modal-box {
-    /* background-color: var(--color-red); */
-    background-color: #777171a6;
+    background-color: var(--color-red);
     border-radius: 20px;
     height: 500px;
     width: 350px;

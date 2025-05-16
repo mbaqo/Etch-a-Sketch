@@ -47,4 +47,5 @@ function changeBackgroundOnHover() {
     }));
 }
 
+createGrid(16);
 toggleModal();
